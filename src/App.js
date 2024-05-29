@@ -1,8 +1,13 @@
-import './App.css';
+// import './App.css';
+import BackgroundImage from './components/BackgroundImage';
+import WeatherCard from './components/WeatherCard'
+
 
 function App() {
   return (
-  <h1>hello world</h1>
+<BackgroundImage>
+    <WeatherCard />
+</BackgroundImage>
   );
 }
 
