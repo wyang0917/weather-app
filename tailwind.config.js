@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily:{
         'alimama': ['AlimamaFangYuanTiVF-Square', 'helvetica']
+      },
+      spacing: {
+        '128': '32rem',
       }
     },
   },

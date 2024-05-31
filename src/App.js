@@ -6,7 +6,7 @@ import WeatherCard from './components/WeatherCard'
 function App() {
   return (
 <BackgroundImage>
-    <WeatherCard />
+    <WeatherCard/>   
 </BackgroundImage>
   );
 }
