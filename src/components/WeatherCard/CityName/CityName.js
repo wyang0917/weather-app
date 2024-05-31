@@ -1,8 +1,9 @@
 import React from 'react'
 
-const CityName = () => {
+const CityName = ({className,name}) => {
+
   return (
-    <p>Shanghai</p>
+    <span className={className}>{name}</span>
   )
 }
 

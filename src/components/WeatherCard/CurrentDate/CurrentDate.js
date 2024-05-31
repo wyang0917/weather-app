@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import moment from 'moment'
 
-const CurrentDate = ({FormatDate}) => {
+const CurrentDate = ({FormatDate,className}) => {
   console.log('date rendered');
   const [date,setDate]=useState(moment())
   useEffect(()=>{
@@ -12,7 +12,7 @@ const CurrentDate = ({FormatDate}) => {
   },[])
   const NewDate = FormatDate(date)
   return (
-    <div>{NewDate}</div>
+    <time className={className}>{NewDate}</time>
   )
 }
 
