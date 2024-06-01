@@ -1,10 +1,9 @@
 import React from 'react'
-import icon from '../../../assets/weather_icon/Cloudy.png'
 
-const WeatherIcon = ({className}) => {
+const WeatherIcon = ({className,icon}) => {
   return (
 
-    <img src={icon} className={className} alt='cloud'></img>
+    <img src={icon} className={className} alt='weather-icon'></img>
 
   )
 }
