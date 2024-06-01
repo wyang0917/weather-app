@@ -14,7 +14,7 @@ const CurrentCity = () => {
     return date.format('DD MMMM,\xa0\xa0dddd hh:mm')
   }
   return (
-    <div className='bg-blue-500 h-128 w-1/3 rounded-3xl relative py-4 px-6 text-white flex flex-col overflow-hidden box-border'>
+    <div className='bg-blue-500 w-1/3 rounded-3xl relative py-4 px-6 text-white flex flex-col overflow-hidden box-border'>
       <img src={bg} alt="cloudy" className='absolute top-0 right-0'></img>
       <CurrentDate FormatDate={formatCurrentCityDate} className="text-sm block" />
       <CityName className={'text-2xl font-extrabold mt-5 text-center block'} name={`Shanghai`}/>

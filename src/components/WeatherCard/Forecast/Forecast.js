@@ -37,7 +37,7 @@ const Forecast = () => {
       temperatureRange:'28 ~ 32°'},
   ]
   return (
-    <div className='flex justify-around w-2/3 mt-6'> 
+    <div className='flex justify-around mt-6'> 
         {forecastDays.map((forecastDay,index)=>(
           <ForecastDay key={index} FormatDay={forecastDay.FormatDay} FormatDate={forecastDay.FormatDate} icon={forecastDay.icon} temperatureRange={forecastDay.temperatureRange} />
         ))}
