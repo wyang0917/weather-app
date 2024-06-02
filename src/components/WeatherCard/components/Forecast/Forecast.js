@@ -1,9 +1,9 @@
 import React from 'react'
-import ForecastDay from './ForecastDay'
-import Hail from '../../../assets/weather_icon/Hail.png'
-import Rain from '../../../assets/weather_icon/Rain.png'
-import Snow from '../../../assets/weather_icon/Snow.png'
-import Sunny from '../../../assets/weather_icon/Sunny.png'
+import ForecastDay from './components/ForecastDay'
+import Hail from '../../../../assets/weather_icon/Hail.png'
+import Rain from '../../../../assets/weather_icon/Rain.png'
+import Snow from '../../../../assets/weather_icon/Snow.png'
+import Sunny from '../../../../assets/weather_icon/Sunny.png'
 import moment from 'moment'
 
 const Forecast = () => {

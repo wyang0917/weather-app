@@ -1,8 +1,8 @@
 import React from 'react'
-import CurrentCity from './CurrentCity'
-import Forecast from './Forecast';
-import SearchBar from './SearchBar';
-import OtherCities from './OtherCities/OtherCities';
+import CurrentCity from './components/CurrentCity'
+import Forecast from './components/Forecast';
+import SearchBar from './components/SearchBar';
+import OtherCities from './components/OtherCities';
 
 const WeatherCard = () => {
   console.log('weather card rendered');

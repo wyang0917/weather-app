@@ -1,12 +1,12 @@
 import React from 'react'
-import bg from '../../../assets/background/Cloudy_day_background.png'
-import icon from '../../../assets/weather_icon/Cloudy.png'
-import CurrentDate from '../CurrentDate'
+import bg from '../../../../assets/background/Cloudy_day_background.png'
+import icon from '../../../../assets/weather_icon/Cloudy.png'
+import CurrentDate from './components/CurrentDate'
 import CityName from '../CityName';
-import Temperature from './Temperature';
+import Temperature from './components/Temperature';
 import TemperatureRange from '../TemperatureRange';
 import WeatherIcon from '../WeatherIcon';
-import Meta from './Meta'
+import Meta from './components/Meta'
 
 const CurrentCity = () => {
   console.log('currentcity');

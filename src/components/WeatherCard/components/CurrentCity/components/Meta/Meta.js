@@ -1,8 +1,8 @@
 import React from 'react'
-import humidityIcon from '../../../../assets/meta_icon/humidity.svg'
-import PMIcon from '../../../../assets/meta_icon/PM2.5.svg'
-import somatosensoryIcon from '../../../../assets/meta_icon/Somatosensory_temperature.svg'
-import windIcon from '../../../../assets/meta_icon/wind_speed.svg'
+import humidityIcon from '../../../../../../assets/meta_icon/humidity.svg'
+import PMIcon from '../../../../../../assets/meta_icon/PM2.5.svg'
+import somatosensoryIcon from '../../../../../../assets/meta_icon/Somatosensory_temperature.svg'
+import windIcon from '../../../../../../assets/meta_icon/wind_speed.svg'
 
 const Meta = ({className}) => {
   const infos = [

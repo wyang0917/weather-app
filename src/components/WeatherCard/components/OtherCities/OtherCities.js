@@ -1,9 +1,9 @@
 import React from 'react'
-import OtherCIty from './OtherCity/OtherCIty'
-import Cloudy from '../../../assets/weather_icon/Cloudy.png'
-import CloudyDay from '../../../assets/weather_icon/Cloudy_day.png'
-import Snow from '../../../assets/weather_icon/Snow.png'
-import Sunny from '../../../assets/weather_icon/Sunny.png'
+import OtherCIty from './components/OtherCity'
+import Cloudy from '../../../../assets/weather_icon/Cloudy.png'
+import CloudyDay from '../../../../assets/weather_icon/Cloudy_day.png'
+import Snow from '../../../../assets/weather_icon/Snow.png'
+import Sunny from '../../../../assets/weather_icon/Sunny.png'
 
 const OtherCities = () => {
   const cities = [
