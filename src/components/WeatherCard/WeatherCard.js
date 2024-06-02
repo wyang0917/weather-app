@@ -2,6 +2,7 @@ import React from 'react'
 import CurrentCity from './CurrentCity'
 import Forecast from './Forecast';
 import SearchBar from './SearchBar';
+import OtherCities from './OtherCities/OtherCities';
 
 const WeatherCard = () => {
   console.log('weather card rendered');
@@ -11,6 +12,7 @@ const WeatherCard = () => {
       <div className=' w-2/3 px-6'>
       <Forecast />
       <SearchBar />
+      <OtherCities />
       </div>
     </div>
   )

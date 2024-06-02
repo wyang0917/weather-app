@@ -6,9 +6,12 @@ module.exports = {
       fontFamily:{
         'alimama': ['AlimamaFangYuanTiVF-Square', 'helvetica']
       },
-      spacing: {
-        '128': '32rem',
-      }
+      backgroundImage: {
+        'London': "url('/src/assets/City/London.png')",
+        'Newyork': "url('/src/assets/City/Newyork.png')",
+        'Shanghai': "url('/src/assets/City/Shanghai.png')",
+        'Sydney': "url('/src/assets/City/Sydney.png')",
+      },
     },
   },
   plugins: [],
