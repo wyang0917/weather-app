@@ -4,10 +4,12 @@ import WeatherIcon from '../../../../../WeatherIcon';
 
 const ForecastDay = ({ FormatDay, FormatDate, icon, temperatureRange }) => {
   return (
-    <div className="flex flex-col items-center">
-      <span className={'block text-2xl font-extrabold'}>{FormatDay}</span>
+    <div className="flex flex-col items-center justify-around w-1/5">
+      <div className='flex flex-col items-center'>
+      <span className={'block text-2xl font-extrabold max-lg:text-xl'}>{FormatDay}</span>
       <span className={'block text-sm'}>{FormatDate}</span>
-      <WeatherIcon icon={icon} className={'scale-75 -mt-4'} />
+      </div>
+      <WeatherIcon icon={icon} className={'w-2/3'} />
       <TemperatureRange
         temperatureRange={temperatureRange}
         className={'block -mt-2 text-sm'}

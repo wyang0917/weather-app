@@ -20,7 +20,7 @@ const CurrentCity = () => {
       <Temperature className={'text-7xl font-extrabold block'} temperature={`23°`}/>
       <TemperatureRange className={'text-sm block'} temperatureRange={`20 ~ 23°`}/>
       <WeatherIcon className={''} icon={icon}/>
-      <Meta className={'bg-white rounded-xl w-full text-slate-950 font-medium text-sm py-3'}/>
+      <Meta className={'bg-white rounded-xl w-full text-black font-medium text-sm py-3'}/>
     </div>
   )
 }
