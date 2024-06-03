@@ -16,7 +16,7 @@ const WeatherCard = () => {
   return (
     <div className="bg-slate-200  max-w-5xl h-auto px-6 py-5 rounded-3xl flex max-md:flex-col max-md:w-80 text-black">
       <CurrentCity />
-      <div className=" w-2/3 pl-6">
+      <div className=" w-2/3 pl-6 max-md:w-full  max-md:pl-0">
         <Forecast />
         <SearchBar />
         <OtherCities />
