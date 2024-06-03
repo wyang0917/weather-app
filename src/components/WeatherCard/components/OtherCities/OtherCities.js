@@ -12,30 +12,34 @@ const OtherCities = () => {
       icon:Sunny,
       name:'Sydney',
       temperatureRange:'28 ~ 32°',
+      color:'from-blue-400',
     },
     {
       bg:'bg-Shanghai',
       icon:Cloudy,
       name:'Shanghai',
       temperatureRange:'20 ~ 23°',
+      color:'from-blue-600',
     },
     {
       bg:'bg-Newyork',
       icon:CloudyDay,
       name:'New York',
       temperatureRange:'18 ~ 20°',
+      color:'from-indigo-400',
     },
     {
       bg:'bg-London',
       icon:Snow,
       name:'London',
       temperatureRange:'0 ~ 2°',
+      color:'from-indigo-800',
     },
   ]
   return (
-    <div className='flex justify-around mt-6'>
+    <div className='flex justify-between max-md:flex-wrap max-md:w-full'>
       {cities.map(city=>(
-        <OtherCIty bg={city.bg} icon={city.icon} name={city.name} temperatureRange={city.temperatureRange} />
+        <OtherCIty bg={city.bg} icon={city.icon} name={city.name} temperatureRange={city.temperatureRange} color={city.color} />
       ))}
     </div>
   )
