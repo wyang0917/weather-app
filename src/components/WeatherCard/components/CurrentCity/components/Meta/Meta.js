@@ -16,7 +16,7 @@ const Meta = ({className}) => {
       <ul className='flex justify-around'>
         {infos.map((info,index)=>(
           <li key={index} className=''>
-            <img src={info.icon} alt={`icon${index+1}`} className="mx-auto"></img>
+            <img src={info.icon} alt={`icon${index+1}`} className="mx-auto" />
             <span>{info.desc}</span>
           </li>
         ))}

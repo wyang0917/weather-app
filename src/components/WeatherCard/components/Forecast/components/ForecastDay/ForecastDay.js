@@ -1,6 +1,6 @@
 import React from 'react';
-import TemperatureRange from '../../../TemperatureRange';
-import WeatherIcon from '../../../WeatherIcon';
+import TemperatureRange from '../../../../../TemperatureRange';
+import WeatherIcon from '../../../../../WeatherIcon';
 
 const ForecastDay = ({ FormatDay, FormatDate, icon, temperatureRange }) => {
   return (

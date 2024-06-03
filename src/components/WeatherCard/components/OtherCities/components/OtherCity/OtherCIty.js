@@ -1,7 +1,7 @@
 import React from 'react';
-import WeatherIcon from '../../../WeatherIcon';
-import CityName from '../../../CityName';
-import TemperatureRange from '../../../TemperatureRange';
+import WeatherIcon from '../../../../../WeatherIcon';
+import CityName from '../../../../../CityName';
+import TemperatureRange from '../../../../../TemperatureRange';
 
 const OtherCIty = ({ bg, icon, name, temperatureRange }) => {
   return (
