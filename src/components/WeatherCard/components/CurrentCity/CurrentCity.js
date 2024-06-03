@@ -9,7 +9,6 @@ import WeatherIcon from '../WeatherIcon';
 import Meta from './components/Meta'
 
 const CurrentCity = () => {
-  console.log('currentcity');
   const formatCurrentCityDate = (date)=>{
     return date.format('DD MMMM,\xa0\xa0dddd hh:mm')
   }
