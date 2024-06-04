@@ -10,7 +10,8 @@ import Meta from './components/Meta'
 
 const CurrentCity = () => {
   const formatCurrentCityDate = (date)=>{
-    return date.format('DD MMMM,\xa0\xa0dddd hh:mm')
+    const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone
+    return date.setZone(userTimeZone).toFormat('dd MMMM,\xa0\xa0cccc hh:mm')
   }
   return (
     <div className='bg-blue-500 w-1/3 rounded-2xl relative py-3 px-3 text-white flex flex-col justify-between items-center	 overflow-hidden box-border max-md:w-full'>

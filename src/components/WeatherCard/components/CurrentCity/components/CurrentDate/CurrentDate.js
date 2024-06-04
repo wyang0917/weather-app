@@ -1,12 +1,12 @@
 import React, {useState,useEffect} from 'react'
-import moment from 'moment'
+import { DateTime } from 'luxon';
 
 const CurrentDate = ({FormatDate,className}) => {
   console.log('date rendered');
-  const [date,setDate]=useState(moment())
+  const [date,setDate]=useState(DateTime.now())
   useEffect(()=>{
     const interval = setInterval(()=>{
-      setDate(moment())
+      setDate(DateTime.now())
     },1000)
     return ()=>clearInterval(interval)
   },[])

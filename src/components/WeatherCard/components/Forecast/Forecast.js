@@ -4,35 +4,35 @@ import Hail from '../../../../assets/weather_icon/Hail.png'
 import Rain from '../../../../assets/weather_icon/Rain.png'
 import Snow from '../../../../assets/weather_icon/Snow.png'
 import Sunny from '../../../../assets/weather_icon/Sunny.png'
-import moment from 'moment'
+import { DateTime } from 'luxon'
 
 const Forecast = () => {
-  const formatCurrentDay = (date,i)=>{
-    return date.clone().add(i,'days').format('dddd')
+  const formatForecastDay = (date,dayFromNow)=>{
+    return DateTime.now().plus({days:dayFromNow}).toFormat('cccc')
   }
-  const formatCurrentDate = (date,i)=>{
-    return date.clone().add(i,'days').format('DD MMMM')
+  const formatForecastDate = (date,dayFromNow)=>{
+    return DateTime.now().plus({days:dayFromNow}).toFormat('dd MMMM')
   }
-  const day = moment()
+  const day = DateTime.now()
   const forecastDays = [
     {
-      FormatDay:formatCurrentDay(day,0),
-      FormatDate:formatCurrentDate(day,0),
+      FormatDay:formatForecastDay(day,1),
+      FormatDate:formatForecastDate(day,1),
       icon:Hail,
       temperatureRange:'20 ~ 25°'},
     {
-      FormatDay:formatCurrentDay(day,1),
-      FormatDate:formatCurrentDate(day,1),
+      FormatDay:formatForecastDay(day,2),
+      FormatDate:formatForecastDate(day,2),
       icon:Rain,
       temperatureRange:'18 ~ 20°'},
     {
-      FormatDay:formatCurrentDay(day,2),
-      FormatDate:formatCurrentDate(day,2),
+      FormatDay:formatForecastDay(day,3),
+      FormatDate:formatForecastDate(day,3),
       icon:Snow,
       temperatureRange:'20 ~ 23°'},
     {
-      FormatDay:formatCurrentDay(day,3),
-      FormatDate:formatCurrentDate(day,3),
+      FormatDay:formatForecastDay(day,4),
+      FormatDate:formatForecastDate(day,4),
       icon:Sunny,
       temperatureRange:'28 ~ 32°'},
   ]
