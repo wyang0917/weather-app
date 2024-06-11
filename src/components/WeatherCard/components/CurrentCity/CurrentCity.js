@@ -34,7 +34,7 @@ const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconD
         className={'text-sm block'}
         temperatureRange={`${minTemp} ~ ${maxTemp}`}
       />
-      <WeatherIcon className={'my-14'} icon={icon} />
+      <WeatherIcon className={'my-12 w-1/3'} icon={icon} />
       <Meta
         className={
           'bg-white rounded-xl w-full text-black font-medium text-sm py-3'} humidityDesc={humidityDesc} windDesc={windDesc} PMIconDesc={PMIconDesc} somatosensoryIconDesc={somatosensoryIconDesc}
