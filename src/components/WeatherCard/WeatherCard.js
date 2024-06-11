@@ -9,13 +9,19 @@ import getForecast from '../../apis/getForecast';
 const WeatherCard = () => {
   const [forecastWeatherData, setForecastWeatherData] = useState({});
   const [loading,setLoading] = useState(true)
+  const [cityName,setCityName] =useState('brisbane')
+
   useEffect(() => {
-    getForecast().then((response) => {
+    getForecast(cityName).then((response) => {
       console.log(response);
       setForecastWeatherData(response);
       setLoading(false)
     });
-  }, []);
+  }, [cityName]);
+
+  const handleCityName = (text)=>{
+    setCityName(text)
+  }
 
   if (loading) {
     return <div className='text-4xl	'>Loading...</div>; 
@@ -61,10 +67,11 @@ const WeatherCard = () => {
         windDesc={windSpeed}
         PMIconDesc={airCondition}
         somatosensoryIconDesc={somatosensory}
+        cityName={cityName}
       />
       <div className=" w-2/3 pl-6 max-md:w-full  max-md:pl-0 flex flex-col justify-between">
         <Forecast forecastDayTempRange={forecastDayTempRange} />
-        <SearchBar />
+        <SearchBar handleCityName={handleCityName}/>
         <OtherCities />
       </div>
     </div>

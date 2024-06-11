@@ -8,7 +8,7 @@ import TemperatureRange from '../../../TemperatureRange';
 import WeatherIcon from '../../../WeatherIcon';
 import Meta from './components/Meta';
 
-const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconDesc,somatosensoryIconDesc}) => {
+const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconDesc,somatosensoryIconDesc,cityName}) => {
 
   const formatCurrentCityDate = (date) => {
     const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -23,8 +23,8 @@ const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconD
         className="text-sm block"
       />
       <CityName
-        className={'text-2xl font-extrabold block my-8'}
-        name={`Shanghai`}
+        className={'text-2xl font-extrabold block my-8 capitalize'}
+        name={cityName}
       />
       <Temperature
         className={'text-7xl font-extrabold block'}
