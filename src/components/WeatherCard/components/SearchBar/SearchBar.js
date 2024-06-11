@@ -39,8 +39,8 @@ const SearchBar = ({handleCityName}) => {
     }
   },[error])
   return (
-    <form className='w-1/2 relative ml-2 max-md:w-full max-md:my-8' onSubmit={handleSubmit}>
-      <input className='outline-none rounded-lg py-1 px-4 w-full' placeholder='search for a city' onChange={(event)=>setInputText(event.target.value)} value={inputText}></input>
+    <form className='w-1/2 relative ml-2 max-md:w-full max-md:my-8 ' onSubmit={handleSubmit}>
+      <input className='outline-none rounded-lg py-1 px-4 w-full ' placeholder='search for a city' onChange={(event)=>setInputText(event.target.value)} value={inputText}></input>
       <button className='py-0.5 px-3 text-white bg-violet-900 rounded-lg  absolute inset-y-px right-px ' type='submit'>search</button>
       {error && <p className='absolute'>{error}</p>}
     </form>

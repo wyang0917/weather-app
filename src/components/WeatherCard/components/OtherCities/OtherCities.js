@@ -26,14 +26,14 @@ const OtherCities = () => {
       icon:CloudyDay,
       name:'New York',
       temperatureRange:'18 ~ 20°',
-      color:'from-indigo-400',
+      color:'from-blue-700',
     },
     {
       bg:'bg-London',
       icon:Snow,
       name:'London',
       temperatureRange:'0 ~ 2°',
-      color:'from-indigo-800',
+      color:'from-blue-800',
     },
   ]
   return (
