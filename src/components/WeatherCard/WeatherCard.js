@@ -7,27 +7,34 @@ import forecastData from '../../mocks/forecast.json';
 import getForecast from '../../apis/getForecast';
 
 const WeatherCard = () => {
-  // const [forecastWeatherData, setForecastWeatherData] = useState({});
-  // useEffect(() => {
-  //   getForecast().then((response) => {
-  //     console.log(response);
-  //     setForecastWeatherData(response);
-  //   });
-  // }, []);
+  const [forecastWeatherData, setForecastWeatherData] = useState({});
+  const [loading,setLoading] = useState(true)
+  useEffect(() => {
+    getForecast().then((response) => {
+      console.log(response);
+      setForecastWeatherData(response);
+      setLoading(false)
+    });
+  }, []);
 
+  if (loading) {
+    return <div className='text-4xl	'>Loading...</div>; 
+  }
+  
     const {
       current: {
         temp_c: temp,
         wind_kph: windSpeed,
         humidity,
         feelslike_c: somatosensory,
-        // air_quality: {pm2_5:airCondition},
+        air_quality: {pm2_5:airCondition},
         condition: { icon: weatherIcon },
       },
-    } = forecastData;
+      forecast:{forecastday},
+    } = forecastWeatherData;
 
     const [day1, day2, day3, day4, day5] =
-    forecastData.forecast.forecastday.map((date) => ({
+    forecastday.map((date) => ({
         minTemp: date.day.mintemp_c,
         maxTemp: date.day.maxtemp_c,
         forecastIcon: date.day.condition.icon,
@@ -52,7 +59,7 @@ const WeatherCard = () => {
         icon={weatherIcon}
         humidityDesc={humidity}
         windDesc={windSpeed}
-        // PMIconDesc={airCondition}
+        PMIconDesc={airCondition}
         somatosensoryIconDesc={somatosensory}
       />
       <div className=" w-2/3 pl-6 max-md:w-full  max-md:pl-0 flex flex-col justify-between">
