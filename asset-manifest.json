@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/weather-app/static/css/main.2a7522ed.css",
+    "main.js": "/weather-app/static/js/main.49468722.js",
+    "static/js/453.0ccb7fb4.chunk.js": "/weather-app/static/js/453.0ccb7fb4.chunk.js",
+    "static/media/AlimamaFangYuanTiVF-Thin.woff": "/weather-app/static/media/AlimamaFangYuanTiVF-Thin.568c1439adee844abd04.woff",
+    "static/media/AlimamaFangYuanTiVF-Thin.woff2": "/weather-app/static/media/AlimamaFangYuanTiVF-Thin.c6feb7455dae459ccf07.woff2",
+    "static/media/Newyork.png": "/weather-app/static/media/Newyork.18dbaaa2ec8196b11b07.png",
+    "static/media/London.png": "/weather-app/static/media/London.8560f5c3fc197d045fd2.png",
+    "static/media/background.png": "/weather-app/static/media/background.5ffd33099840518bc54d.png",
+    "static/media/Sydney.png": "/weather-app/static/media/Sydney.dc636083bd2f8a05d3a9.png",
+    "static/media/Shanghai.png": "/weather-app/static/media/Shanghai.9694d59dbce82b2dcdf1.png",
+    "static/media/Cloudy_day_background.png": "/weather-app/static/media/Cloudy_day_background.628c0429da4d734df49b.png",
+    "static/media/humidity.svg": "/weather-app/static/media/humidity.8448f3a7d4884665512ee7ffa893ef96.svg",
+    "static/media/wind_speed.svg": "/weather-app/static/media/wind_speed.c27cb5a80453f667492badd5965be0df.svg",
+    "static/media/PM2.5.svg": "/weather-app/static/media/PM2.5.d965e70bd67f078fb3eff34e473f9077.svg",
+    "static/media/Somatosensory_temperature.svg": "/weather-app/static/media/Somatosensory_temperature.651ce9ccc028e064a584e8d73a089e1e.svg",
+    "index.html": "/weather-app/index.html",
+    "main.2a7522ed.css.map": "/weather-app/static/css/main.2a7522ed.css.map",
+    "main.49468722.js.map": "/weather-app/static/js/main.49468722.js.map",
+    "453.0ccb7fb4.chunk.js.map": "/weather-app/static/js/453.0ccb7fb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a7522ed.css",
+    "static/js/main.49468722.js"
+  ]
+}
