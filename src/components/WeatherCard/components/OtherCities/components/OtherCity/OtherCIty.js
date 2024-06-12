@@ -3,9 +3,9 @@ import WeatherIcon from '../../../../../WeatherIcon';
 import CityName from '../../../../../CityName';
 import TemperatureRange from '../../../../../TemperatureRange';
 
-const OtherCIty = ({ bg, icon, name, temperatureRange, color }) => {
+const OtherCIty = ({ bg, icon, name, temperatureRange, color,onClick }) => {
   return (
-    <div className="relative mx-2 w-1/4 max-md:w-5/12 max-md:mt-3 cursor-pointer group">
+    <div className="relative mx-2 w-1/4 max-md:w-5/12 max-md:mt-3 cursor-pointer group" onClick={onClick}>
       <div
         className={`${bg} bg-no-repeat bg-center bg-cover absolute inset-0 rounded-2xl`}
       >

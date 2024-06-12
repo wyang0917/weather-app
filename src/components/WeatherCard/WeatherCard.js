@@ -67,7 +67,7 @@ const WeatherCard = () => {
       <div className=" w-2/3 pl-6 max-md:w-full  max-md:pl-0 flex flex-col justify-between">
         <Forecast forecastDayTempRange={forecastDayTempRange} />
         <SearchBar handleCityName={handleCityName} />
-        <OtherCities />
+        <OtherCities handleCityName={handleCityName}/>
       </div>
     </div>
   );
