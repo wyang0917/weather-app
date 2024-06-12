@@ -37,7 +37,7 @@ const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconD
       <WeatherIcon className={'my-12 w-1/3'} icon={icon} />
       <Meta
         className={
-          'bg-white rounded-xl w-full text-black font-medium text-sm py-3'} humidityDesc={humidityDesc} windDesc={windDesc} PMIconDesc={PMIconDesc} somatosensoryIconDesc={somatosensoryIconDesc}
+          ''} humidityDesc={humidityDesc} windDesc={windDesc} PMIconDesc={PMIconDesc} somatosensoryIconDesc={somatosensoryIconDesc}
         
       />
     </div>

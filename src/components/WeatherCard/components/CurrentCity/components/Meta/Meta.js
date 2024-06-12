@@ -6,22 +6,22 @@ import windIcon from '../../../../../../assets/meta_icon/wind_speed.svg'
 
 const Meta = ({className,humidityDesc,windDesc,PMIconDesc,somatosensoryIconDesc}) => {
   const infos = [
-    {icon:humidityIcon,desc:`${humidityDesc}%`,alt:'humidityIcon'},
-    {icon:windIcon,desc:`${Math.round(windDesc)}km/h`,alt:'windIcon'},
-    {icon:PMIcon,desc:PMIconDesc,alt:'PMIcon'},
-    {icon:somatosensoryIcon,desc:`${somatosensoryIconDesc}°`,alt:'somatosensoryIcon'},
+    {icon:humidityIcon,desc:`${humidityDesc}%`,alt:'humidityIcon',title:'humidity'},
+    {icon:windIcon,desc:`${Math.round(windDesc)}km/h`,alt:'windIcon',title:'wind speed'},
+    {icon:PMIcon,desc:PMIconDesc,alt:'PMIcon',title:'air quality'},
+    {icon:somatosensoryIcon,desc:`${somatosensoryIconDesc}°`,alt:'somatosensoryIcon',title:'feels like'},
   ]
   return (
-    <div className={className}>
-      <ul className='flex justify-around'>
+  
+      <ul className='flex justify-around bg-white rounded-xl w-full text-black font-medium text-sm py-3 cursor-pointer'>
         {infos.map((info,index)=>(
-          <li key={index} className='text-center'>
-            <img src={info.icon} alt={info.alt} className="mx-auto" />
+          <li key={index} className='text-center' title={info.title}>
+            <img src={info.icon} alt={info.alt} className="mx-auto"/>
             <span>{info.desc}</span>
           </li>
         ))}
       </ul>
-    </div>
+
   )
 }
 
