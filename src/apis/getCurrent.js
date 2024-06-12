@@ -1,14 +1,14 @@
+import axios from 'axios';
+const apiKey = process.env.REACT_APP_API_KEY;
 
-const getCurrent=()=>{
-  const apiKey = process.env.REACT_APP_API_KEY
-  const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Brisbane`
-  fetch(url)
-  .then((res)=>res.json())
-  .then((data)=>{
-    const currentWeather = data
-    console.log(currentWeather);
-  })
+const getCurrent = async (cityName) => {
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=1`;
+  try {
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    console.error('error fetching get forecast', error);
+    throw new Error('Fail to fetch forecast data');
   }
-
-
-export default getCurrent
+};
+export default getCurrent;
