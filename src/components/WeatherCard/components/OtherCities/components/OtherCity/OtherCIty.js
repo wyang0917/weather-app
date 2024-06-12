@@ -12,7 +12,7 @@ const OtherCIty = ({ bg, icon, name, temperatureRange, color }) => {
         <div className={`${color} bg-gradient-to-tl h-full rounded-2xl group-hover:opacity-0 transition-opacity duration-300`}></div>
       </div>
       <div className={'text-white flex flex-col items-center relative z-10'}>
-        <WeatherIcon icon={icon} className={'w-1/2'} />
+        <WeatherIcon icon={icon} className={'px-6'} />
         <CityName name={name} className={'block text-xl font-extrabold'} />
         <TemperatureRange
           temperatureRange={temperatureRange}
