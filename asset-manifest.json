@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weather-app/static/css/main.2a7522ed.css",
-    "main.js": "/weather-app/static/js/main.49468722.js",
+    "main.js": "/weather-app/static/js/main.61b988ed.js",
     "static/js/453.0ccb7fb4.chunk.js": "/weather-app/static/js/453.0ccb7fb4.chunk.js",
     "static/media/AlimamaFangYuanTiVF-Thin.woff": "/weather-app/static/media/AlimamaFangYuanTiVF-Thin.568c1439adee844abd04.woff",
     "static/media/AlimamaFangYuanTiVF-Thin.woff2": "/weather-app/static/media/AlimamaFangYuanTiVF-Thin.c6feb7455dae459ccf07.woff2",
@@ -17,11 +17,11 @@
     "static/media/Somatosensory_temperature.svg": "/weather-app/static/media/Somatosensory_temperature.651ce9ccc028e064a584e8d73a089e1e.svg",
     "index.html": "/weather-app/index.html",
     "main.2a7522ed.css.map": "/weather-app/static/css/main.2a7522ed.css.map",
-    "main.49468722.js.map": "/weather-app/static/js/main.49468722.js.map",
+    "main.61b988ed.js.map": "/weather-app/static/js/main.61b988ed.js.map",
     "453.0ccb7fb4.chunk.js.map": "/weather-app/static/js/453.0ccb7fb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a7522ed.css",
-    "static/js/main.49468722.js"
+    "static/js/main.61b988ed.js"
   ]
 }
