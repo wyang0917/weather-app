@@ -1,6 +1,5 @@
 import React from 'react';
 import bg from '../../../../assets/background/Cloudy_day_background.png';
-// import icon from '../../../../assets/weather_icon/Cloudy.png';
 import CurrentDate from './components/CurrentDate';
 import CityName from '../../../CityName';
 import Temperature from './components/Temperature';
@@ -8,8 +7,17 @@ import TemperatureRange from '../../../TemperatureRange';
 import WeatherIcon from '../../../WeatherIcon';
 import Meta from './components/Meta';
 
-const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconDesc,somatosensoryIconDesc,cityName}) => {
-
+const CurrentCity = ({
+  temp,
+  minTemp,
+  maxTemp,
+  icon,
+  humidityDesc,
+  windDesc,
+  PMIconDesc,
+  somatosensoryIconDesc,
+  cityName,
+}) => {
   const formatCurrentCityDate = (date) => {
     const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     return date.setZone(userTimeZone).toFormat('dd MMMM,\xa0\xa0cccc hh:mm');
@@ -36,9 +44,11 @@ const CurrentCity = ({temp, minTemp, maxTemp, icon,humidityDesc,windDesc,PMIconD
       />
       <WeatherIcon className={'my-12 w-1/3'} icon={icon} />
       <Meta
-        className={
-          ''} humidityDesc={humidityDesc} windDesc={windDesc} PMIconDesc={PMIconDesc} somatosensoryIconDesc={somatosensoryIconDesc}
-        
+        className={''}
+        humidityDesc={humidityDesc}
+        windDesc={windDesc}
+        PMIconDesc={PMIconDesc}
+        somatosensoryIconDesc={somatosensoryIconDesc}
       />
     </div>
   );

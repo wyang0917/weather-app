@@ -50,9 +50,8 @@ const OtherCities = ({ handleCityName }) => {
   }, []);
   console.log('citiesData', citiesData);
   const handleClick = (cityName) => {
-    console.log('cityName',cityName);
+    console.log('cityName', cityName);
     handleCityName(cityName);
-  
   };
 
   return (
@@ -64,7 +63,7 @@ const OtherCities = ({ handleCityName }) => {
           name={city.name}
           temperatureRange={`${city.forecastDay[0].day.mintemp_c} ~ ${city.forecastDay[0].day.maxtemp_c}°`}
           color={city.color}
-          onClick={()=>handleClick(city.name)}
+          onClick={() => handleClick(city.name)}
         />
       ))}
     </div>

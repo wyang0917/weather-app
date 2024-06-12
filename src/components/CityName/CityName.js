@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const CityName = ({className,name}) => {
+const CityName = ({ className, name }) => {
+  return <span className={className}>{name}</span>;
+};
 
-  return (
-    <span className={className}>{name}</span>
-  )
-}
-
-export default CityName
+export default CityName;
