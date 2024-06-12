@@ -39,7 +39,7 @@ const Forecast = ({ forecastDayTempRange }) => {
   ];
 
   return (
-    <div className="flex justify-between max-md:flex-wrap h-1/2 pb-3 font-medium max-md:mx-auto">
+    <div className="flex justify-between max-md:flex-wrap h-1/2 pb-3 font-medium max-md:mx-auto ">
       {forecastDays.map((forecastDay, index) => (
         <ForecastDay
           key={index}

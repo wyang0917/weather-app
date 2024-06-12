@@ -5,7 +5,7 @@ import TemperatureRange from '../../../../../TemperatureRange';
 
 const OtherCIty = ({ bg, icon, name, temperatureRange, color }) => {
   return (
-    <div className="relative mx-2 w-1/4 max-md:w-1/2 max-md:mx-0 max-md:mt-3 cursor-pointer group">
+    <div className="relative mx-2 w-1/4 max-md:w-5/12 max-md:mt-3 cursor-pointer group">
       <div
         className={`${bg} bg-no-repeat bg-center bg-cover absolute inset-0 rounded-2xl`}
       >

@@ -35,7 +35,7 @@ const SearchBar = ({ handleCityName }) => {
   }, [error]);
   return (
     <form
-      className="w-1/2 relative ml-2 max-md:w-full max-md:my-8 "
+      className="w-1/2 relative ml-2 max-md:w-11/12 max-md:my-8 max-md:mx-auto"
       onSubmit={handleSubmit}
     >
       <input
