@@ -2,7 +2,7 @@ import React from 'react';
 import bg from '../../../../assets/background/Cloudy_day_background.png';
 import CurrentDate from './components/CurrentDate';
 import CityName from '../../../CityName';
-import Temperature from './components/Temperature';
+import Temperature from '../../../Temperature';
 import TemperatureRange from '../../../TemperatureRange';
 import WeatherIcon from '../../../WeatherIcon';
 import Meta from './components/Meta';
