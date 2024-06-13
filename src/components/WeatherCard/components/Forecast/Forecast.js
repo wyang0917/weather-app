@@ -4,13 +4,14 @@ import { DateTime } from 'luxon';
 import ForecastDay from './components/ForecastDay';
 
 const Forecast = ({ forecastDayTempRange }) => {
-  const formatForecastDay = (date, dayFromNow) => {
-    return DateTime.now().plus({ days: dayFromNow }).toFormat('cccc');
-  };
-  const formatForecastDate = (date, dayFromNow) => {
-    return DateTime.now().plus({ days: dayFromNow }).toFormat('dd MMMM');
-  };
   const day = DateTime.now();
+  const formatForecastDay = (day, dayFromNow) => {
+    return day.plus({ days: dayFromNow }).toFormat('cccc');
+  };
+  const formatForecastDate = (day, dayFromNow) => {
+    return day.plus({ days: dayFromNow }).toFormat('dd MMMM');
+  };
+  
   const forecastDays = [
     {
       FormatDay: formatForecastDay(day, 1),
