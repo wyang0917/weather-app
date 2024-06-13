@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { DateTime } from 'luxon';
 
 const CurrentDate = ({ FormatDate, className }) => {
-  console.log('date rendered');
   const [date, setDate] = useState(DateTime.now());
   useEffect(() => {
     const interval = setInterval(() => {

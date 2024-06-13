@@ -12,7 +12,6 @@ const WeatherCard = () => {
 
   useEffect(() => {
     getForecast(cityName).then((response) => {
-      console.log(response);
       setForecastWeatherData(response);
       setLoading(false);
     });

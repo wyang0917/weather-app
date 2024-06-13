@@ -32,7 +32,6 @@ const OtherCities = ({ handleCityName }) => {
         const updateCityWeather = await Promise.all(
           cities.map(async (city) => {
             const data = await getCurrent(city.name);
-            console.log('current data:', data);
             return {
               ...city,
               weatherIcon: data.current.condition.icon,
@@ -40,17 +39,15 @@ const OtherCities = ({ handleCityName }) => {
             };
           })
         );
-        console.log('Updated city data:', updateCityWeather);
+
         setCitiesData(updateCityWeather);
       } catch (error) {
-        console.error('Error fetching city data:', error);
+        throw new Error('Fail to fetching city data');
       }
     };
     fetchData();
   }, []);
-  console.log('citiesData', citiesData);
   const handleClick = (cityName) => {
-    console.log('cityName', cityName);
     handleCityName(cityName);
   };
 

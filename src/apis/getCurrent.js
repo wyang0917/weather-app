@@ -7,7 +7,6 @@ const getCurrent = async (cityName) => {
     const response = await axios.get(url);
     return response.data;
   } catch (error) {
-    console.error('error fetching get forecast', error);
     throw new Error('Fail to fetch forecast data');
   }
 };
