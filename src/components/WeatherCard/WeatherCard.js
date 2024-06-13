@@ -4,11 +4,21 @@ import Forecast from './components/Forecast';
 import SearchBar from './components/SearchBar';
 import OtherCities from './components/OtherCities';
 import getForecast from '../../apis/getForecast';
+import getIpCity from '../../apis/getIpCity.js';
 
 const WeatherCard = () => {
   const [forecastWeatherData, setForecastWeatherData] = useState({});
   const [loading, setLoading] = useState(true);
   const [cityName, setCityName] = useState('brisbane');
+  const [ipAddress,setIpAddress] =useState('')
+
+
+  useEffect(()=>{
+    getIpCity().then((response)=>(
+      setIpAddress(response)
+    ))
+  },[])
+
 
   useEffect(() => {
     getForecast(cityName).then((response) => {
