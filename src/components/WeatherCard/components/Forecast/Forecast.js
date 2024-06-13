@@ -1,5 +1,6 @@
 import React from 'react';
 import { DateTime } from 'luxon';
+import {v4 as uuid} from 'uuid'
 
 import ForecastDay from './components/ForecastDay';
 
@@ -43,7 +44,7 @@ const Forecast = ({ forecastDayTempRange }) => {
     <div className="flex justify-between max-md:flex-wrap h-1/2 pb-3 font-medium max-md:mx-auto ">
       {forecastDays.map((forecastDay, index) => (
         <ForecastDay
-          key={index}
+          key={uuid()}
           FormatDay={forecastDay.FormatDay}
           FormatDate={forecastDay.FormatDate}
           icon={forecastDay.icon}

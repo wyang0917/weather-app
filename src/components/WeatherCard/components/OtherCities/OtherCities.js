@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {v4 as uuid} from 'uuid'
 import OtherCIty from './components/OtherCity';
 import getCurrent from '../../../../apis/getCurrent';
 const OtherCities = ({ handleCityName }) => {
@@ -55,6 +56,7 @@ const OtherCities = ({ handleCityName }) => {
     <div className="flex justify-between max-md:flex-wrap w-full">
       {citiesData.map((city) => (
         <OtherCIty
+          key={uuid()}
           bg={city.bg}
           icon={city.weatherIcon}
           name={city.name}
