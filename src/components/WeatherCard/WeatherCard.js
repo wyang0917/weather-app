@@ -9,14 +9,13 @@ import getIpCity from '../../apis/getIpCity.js';
 const WeatherCard = () => {
   const [forecastWeatherData, setForecastWeatherData] = useState({});
   const [loading, setLoading] = useState(true);
-  const [cityName, setCityName] = useState('brisbane');
-  const [ipAddress,setIpAddress] =useState('')
-
-
+  const [cityName, setCityName] = useState('sydney');
+  
   useEffect(()=>{
-    getIpCity().then((response)=>(
-      setIpAddress(response)
-    ))
+    getIpCity().then((response)=>{
+      setCityName(response.city)
+      setLoading(false);
+    })
   },[])
 
 
@@ -47,7 +46,7 @@ const WeatherCard = () => {
     forecast: { forecastday },
   } = forecastWeatherData;
 
-  const [day1, day2, day3, day4, day5] = forecastday.map((date) => ({
+  const [day1, day2, day3,] = forecastday.map((date) => ({
     minTemp: date.day.mintemp_c,
     maxTemp: date.day.maxtemp_c,
     forecastIcon: date.day.condition.icon,
@@ -56,8 +55,6 @@ const WeatherCard = () => {
   const forecastDayTempRange = [
     { minTemp: day2.minTemp, maxTemp: day2.maxTemp, icon: day2.forecastIcon },
     { minTemp: day3.minTemp, maxTemp: day3.maxTemp, icon: day3.forecastIcon },
-    { minTemp: day4.minTemp, maxTemp: day4.maxTemp, icon: day4.forecastIcon },
-    { minTemp: day5.minTemp, maxTemp: day5.maxTemp, icon: day5.forecastIcon },
   ];
 
   return (

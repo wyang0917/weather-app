@@ -26,18 +26,6 @@ const Forecast = ({ forecastDayTempRange }) => {
       icon: forecastDayTempRange[1].icon,
       temperatureRange: `${forecastDayTempRange[1].minTemp} ~ ${forecastDayTempRange[1].maxTemp}°`,
     },
-    {
-      FormatDay: formatForecastDay(day, 3),
-      FormatDate: formatForecastDate(day, 3),
-      icon: forecastDayTempRange[2].icon,
-      temperatureRange: `${forecastDayTempRange[2].minTemp} ~ ${forecastDayTempRange[2].maxTemp}°`,
-    },
-    {
-      FormatDay: formatForecastDay(day, 4),
-      FormatDate: formatForecastDate(day, 4),
-      icon: forecastDayTempRange[3].icon,
-      temperatureRange: `${forecastDayTempRange[3].minTemp} ~ ${forecastDayTempRange[3].maxTemp}°`,
-    },
   ];
 
   return (
